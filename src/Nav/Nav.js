@@ -1,9 +1,13 @@
 import React from "react";
 import "./Nav.css";
+
 function Nav() {
   return (
     <div className="nav">
-      <h1>nav</h1>
+      <img
+        src="https://variety.com/wp-content/uploads/2020/05/netflix-logo.png?w=1024"
+        alt=""
+      />
     </div>
   );
 }
