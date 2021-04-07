@@ -1,9 +1,25 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+// import requests from "../Requests";
+import axios from "../axios";
+import "./Row.css";
 
-function Row() {
+function Row({ title, fetchUrl, isLargeRow = false }) {
+  const [movies, setMovies] = useState([]);
+
+  useEffect(() => {
+    async function fetchData() {
+      const request = await axios.get(fetchUrl);
+      setMovies(request.data.results);
+      return request;
+    }
+    fetchData();
+  }, [fetchUrl]);
+
+  console.log("wow", movies);
+
   return (
-    <div>
-      <h1>Rows</h1>
+    <div className="row">
+      <h2>{title}</h2>
     </div>
   );
 }
