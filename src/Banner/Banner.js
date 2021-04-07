@@ -1,6 +1,9 @@
 import React from "react";
 import "./Banner.css";
+
 function Banner() {
+  const truncate = () => {};
+
   return (
     <header
       className="banner"
