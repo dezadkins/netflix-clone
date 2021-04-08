@@ -19,7 +19,7 @@ function Banner() {
     fetchData();
   }, []);
 
-  console.log("This works?", movie);
+  // console.log("This works?", movie);
 
   const truncate = (string, n) => {
     return string?.length > n ? string.substr(0, n - 1) + "..." : string;
@@ -38,6 +38,7 @@ function Banner() {
         <h1 className="banner__title">
           {movie?.title || movie?.name || movie?.original_name}
         </h1>
+        {/* <h2>{movie?.vote_average}</h2> */}
         <div className="banner__buttons">
           <button className="banner__button">Play</button>
           <button className="banner__button">My List</button>
