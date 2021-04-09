@@ -9,9 +9,9 @@
   width: 45rem;
   /* background-color: white; */
   line-height: 1.3;
+  max-width: 360px;
   padding-top: 1rem;
   font-size: 0.8rem;
-  max-width: 360px;
   height: 80px;
 }
 
@@ -27,8 +27,12 @@
   padding-bottom: 0.3rem;
 }
 
+.banner__ratings > h3 {
+  padding-bottom: 0.7rem;
+}
+
 .banner--fadeBottom {
-  height: 7.5rem;
+  height: 7.3rem;
   background-image: linear-gradient(
     180deg,
     transparent,
