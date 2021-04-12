@@ -15,7 +15,16 @@ function Login() {
       </div>
       <div className="login__body">
         <>
-          <h1>Unlimited films, TV programmes and more.</h1>
+          <h1>Unlimited films, TV programs and more.</h1>
+          <h2>Watch anywhere. Cancel at any time.</h2>
+          <h3>
+            Ready to watch? Enter your emai to create or restart your
+            membership.
+          </h3>
+          <div className="login__input">
+            <input type="text" placeholder="Email address" />
+            <button>Sign Up</button>
+          </div>
         </>
       </div>
     </div>

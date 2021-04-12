@@ -46,9 +46,24 @@
   top: 30%;
   color: #fff;
   padding: 20px;
+  margin: auto;
+  text-align: center;
+  /* margin-left: auto;
+  margin-right: auto; */
 }
 
 .login__body > h1 {
   font-size: 3.125rem;
   margin-bottom: 20px;
+}
+
+.login__body > h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.login__body > h3 {
+  font-size: 1.3rem;
+  font-weight: 400;
 }
