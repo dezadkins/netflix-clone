@@ -11,6 +11,7 @@ function Login() {
           alt=""
         />
         <button className="login__button">Sign In</button>
+        <div className="login__gradient"></div>
       </div>
     </div>
   );
