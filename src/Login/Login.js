@@ -22,8 +22,10 @@ function Login() {
             membership.
           </h3>
           <div className="login__input">
-            <input type="text" placeholder="Email address" />
-            <button>Sign Up</button>
+            <form action="">
+              <input type="email" placeholder="Email address" />
+              <button className="input__signUp">Sign Up</button>
+            </form>
           </div>
         </>
       </div>
