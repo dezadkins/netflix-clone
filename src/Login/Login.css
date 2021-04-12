@@ -31,4 +31,24 @@
   width: 100%;
   z-index: 1;
   height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+
+.login__body {
+  z-index: 1;
+  position: absolute;
+  top: 30%;
+  color: #fff;
+  padding: 20px;
+}
+
+.login__body > h1 {
+  font-size: 3.125rem;
+  margin-bottom: 20px;
 }
