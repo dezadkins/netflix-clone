@@ -24,7 +24,7 @@ function Login() {
           <div className="login__input">
             <form action="">
               <input type="email" placeholder="Email address" />
-              <button className="input__signUp">Sign Up</button>
+              <button className="input__signUp">GET STARTED</button>
             </form>
           </div>
         </>
