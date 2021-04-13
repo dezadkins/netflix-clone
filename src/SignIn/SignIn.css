@@ -30,3 +30,21 @@
   cursor: pointer;
   margin-top: 20px;
 }
+
+.signIn > form > h1 {
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.signIn > form > h4 {
+  text-align: left;
+  margin-top: 30px;
+}
+
+.signIn__gray {
+  color: gray;
+}
+
+.signIn__link > a {
+  color: #fff;
+}

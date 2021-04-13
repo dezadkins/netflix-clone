@@ -8,7 +8,13 @@ function SignIn() {
         <input type="email" placeholder="Email" />
         <input type="password" placeholder="Password" />
         <button type="submit">Sign In</button>
-        <h4></h4>
+        <h4>
+          <span className="signIn__gray">New to Netflix? </span>
+
+          <span className="signIn__link">
+            <a href="">Sign Up now.</a>
+          </span>
+        </h4>
       </form>
     </div>
   );
