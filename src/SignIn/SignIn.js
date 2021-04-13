@@ -1,9 +1,15 @@
 import React from "react";
-
+import "./SignIn.css";
 function SignIn() {
   return (
     <div className="signIn">
-      <h1>this is sign in</h1>
+      <form action="">
+        <h1>Sign In</h1>
+        <input type="email" placeholder="Email" />
+        <input type="password" placeholder="Password" />
+        <button type="submit">Sign In</button>
+        <h4></h4>
+      </form>
     </div>
   );
 }
