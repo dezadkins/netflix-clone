@@ -70,7 +70,7 @@
 
 .login__input > form > input {
   padding: 10px;
-  outline: none;
+  outline: 0;
   height: 30px;
   width: 30%;
   border: none;
@@ -79,6 +79,7 @@
 
 .input__signUp {
   padding: 16px 20px;
+
   font-size: 1rem;
   color: #fff;
   background-color: #e50914;
