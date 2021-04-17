@@ -17,7 +17,7 @@ function HomeScreen() {
 
       {/* Row */}
       <Row
-        title="NETFLIX ORIGINALS"
+        title="DEZFLIX ORIGINALS"
         fetchUrl={requests.fetchNetflixOriginals}
         isLargeRow
       />
