@@ -6,42 +6,46 @@ import Login from "./Login/Login";
 import { auth } from "./firebase";
 import { useDispatch, useSelector } from "react-redux";
 import { logout, selectUser, signin } from "./features/userSlice";
+import ProfilePage from "./ProfilePage/ProfilePage";
 
 function App() {
-  const user = null;
-  // const dispatch = useDispatch();
+  const user = useSelector(selectUser);
+  const dispatch = useDispatch();
 
-  // useEffect(() => {
-  //   const getOut = auth.onAuthStateChanged((userAuth) => {
-  //     if (userAuth) {
-  //       //Logged In
-  //       dispatch(
-  //         signin({
-  //           uid: userAuth.uid,
-  //           email: userAuth.email,
-  //         })
-  //       );
-  //     } else {
-  //       //Loggged Out
-  //       dispatch(logout);
-  //     }
-  //   });
+  useEffect(() => {
+    const getOut = auth.onAuthStateChanged((userAuth) => {
+      if (userAuth) {
+        //Logged In
+        dispatch(
+          signin({
+            uid: userAuth.uid,
+            email: userAuth.email,
+          })
+        );
+      } else {
+        //Loggged Out
+        dispatch(logout);
+      }
+    });
 
-  //   return getOut; //performance not effected with this.
-  // }, []);
+    return getOut; //performance not effected with this.
+  }, []);
 
   return (
     <div className="app">
       <Router>
-        {/* {!user ? (
-          <Login /> */}
-        // ) : (
-        <Switch>
-          <Route exact path="/">
-            <HomeScreen />
-          </Route>
-        </Switch>
-        {/* )} */}
+        {!user ? (
+          <Login />
+        ) : (
+          <Switch>
+            <Route path="/profile">
+              <ProfilePage />
+            </Route>
+            <Route exact path="/">
+              <HomeScreen />
+            </Route>
+          </Switch>
+        )}
       </Router>
     </div>
   );
