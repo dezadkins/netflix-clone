@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { selectUser } from "../features/userSlice";
+import { auth } from "../firebase";
 import Nav from "../Nav/Nav";
 import "./ProfilePage.css";
 
@@ -8,7 +9,6 @@ function ProfilePage() {
   const user = useSelector(selectUser);
   return (
     <div className="profile">
-      <h2>This the Profile Page</h2>
       <Nav />
       <div className="profile__body">
         <h1>Edit Profile</h1>
@@ -19,6 +19,14 @@ function ProfilePage() {
           />
           <div className="profile__details">
             <h2>{user.email}</h2>
+            <div className="profile__plans">
+              <button
+                onClick={() => auth.signOut()}
+                className="profile__signOut"
+              >
+                Sign Out
+              </button>
+            </div>
           </div>
         </div>
       </div>

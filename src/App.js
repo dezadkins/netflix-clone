@@ -24,12 +24,12 @@ function App() {
         );
       } else {
         //Loggged Out
-        dispatch(logout);
+        dispatch(logout());
       }
     });
 
     return getOut; //performance not effected with this.
-  }, []);
+  }, [dispatch]); // add this as dependency cuz it is dependent on dispatch
 
   return (
     <div className="app">
