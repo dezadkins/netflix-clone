@@ -44,7 +44,7 @@ function SignIn() {
           Sign In
         </button>
         <h4>
-          <span className="signIn__gray">New to Netflix? </span>
+          <span className="signIn__gray">New to Dezflix? </span>
 
           <span className="signIn__link" onClick={register}>
             <a href="">Sign Up now.</a>

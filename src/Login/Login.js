@@ -31,7 +31,7 @@ function Login() {
             </h3>
             <div className="login__input">
               <form action="">
-                <input type="email" placeholder="Email Address" />
+                {/* <input type="email" placeholder="Email Address" /> */}
                 <button
                   onClick={() => setSignIn(true)}
                   className="input__signUp"

@@ -1,9 +1,11 @@
 .signIn {
-  max-width: 300px;
+  max-width: 250px;
   padding: 70px;
   margin-left: auto;
+  border-radius: 10px;
+  border: 1px solid rgba(128, 128, 128, 0.513);
   margin-right: auto;
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: rgba(8, 8, 8, 0.664);
 }
 
 .signIn > form {
@@ -22,7 +24,7 @@
 .signIn > form > button {
   padding: 16px 20px;
   font-size: 1rem;
-  color: #fff;
+  color: rgb(255, 255, 255);
   border-radius: 5px;
   background-color: #e50914;
   font-weight: 600;
