@@ -26,6 +26,7 @@ function Nav() {
     <div className={`nav ${show && "nav__black"}`}>
       <div className="nav__contents">
         <img
+          onClick={() => history.push("/")}
           className="nav__logo"
           src="https://i.imgur.com/EdyiN6K.png"
           alt=""
