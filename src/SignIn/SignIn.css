@@ -5,7 +5,8 @@
   border-radius: 10px;
   border: 1px solid rgba(128, 128, 128, 0.513);
   margin-right: auto;
-  background-color: rgba(8, 8, 8, 0.664);
+  background-color: rgba(8, 8, 8, 0.507);
+  box-shadow: 8px 8px 5px 5px rgba(13, 13, 19, 0.2);
 }
 
 .signIn > form {
