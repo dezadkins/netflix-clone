@@ -29,14 +29,14 @@ function Nav() {
           onClick={() => history.push("/")}
           className="nav__logo"
           src="https://i.imgur.com/EdyiN6K.png"
-          alt=""
+          alt="dezflix logo"
         />
 
         <img
           onClick={() => history.push("/profile")}
           className="nav__avatar"
-          src="https://pbs.twimg.com/profile_images/1240119990411550720/hBEe3tdn_400x400.png"
-          alt=""
+          src="https://ih0.redbubble.net/image.618410871.2644/flat,1000x1000,075,f.u2.jpg"
+          alt="avatar"
         />
       </div>
     </div>
